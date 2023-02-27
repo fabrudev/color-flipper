@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Nav ===== */
+.nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;    
+}
+.nav__title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #6ab6dc;
+}
+.nav__items-container {
+    display: flex;
+    gap: 17px;
+}
+.nav__item {
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* ===== Main ===== */
+.main {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s;
+}
+.display{
+    background: #1b1b1b;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.display__text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.display__color {
+    margin-left: 10px;
+    color: #6ab6dc;
+}
+.main__btn {
+    padding: 10px 30px;
+    background: none;
+    border: 3px solid #1b1b1b;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: .9rem;
+    outline: none;
+    transition: all .2s;
+    color: #1b1b1b;
+}
+.main__btn:hover {
+    background: #1b1b1b;
+    color: #fff;
+    cursor: pointer;
+}
+.main__btn:active {
+    transform: scale(.95);
+}
+
+/* ===== Media Queries ===== */
+@media screen and (max-width: 540px) {
+    .display__text {
+        font-size: 1rem;
+    }
+    .main__btn {
+        padding: 6px 20px;
+        font-size: .9rem;
+    }
+}
